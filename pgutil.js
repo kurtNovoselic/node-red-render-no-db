@@ -42,7 +42,7 @@ const createTable = async () => {
       data text
     );
   `
-  await doSQL(query, null)
+  await doSQL(query, null);
 }
 
 const doSQL = async (query, values) => {
@@ -59,6 +59,7 @@ const doSQL = async (query, values) => {
 }
 
 const loadConfig = async (appname) => {
+  await createTable();
   const query = 'SELECT * FROM "eConfigs" WHERE appname = $1'
   const data = await doSQL(query, [JSON.stringify(appname)])
   if (data && data.rowCount > 0) {
