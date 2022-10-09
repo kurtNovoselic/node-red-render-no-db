@@ -3,25 +3,7 @@
   "description": "A visual tool for wiring the Internet of Things.",
   "keywords": [ "Node-RED", "IoT", "Internet of Things", "node.js", "node" ],
   "website": "http://nodered.org/",
-  "repository": "https://github.com/joeartsea/node-red-heroku.git",
+  "repository": "https://github.com/lebalz/node-red-flow.git",
   "logo": "http://nodered.org/node-red.png",
-  "success_url": "/",
-  "env": {
-    "NODE_RED_USERNAME": {
-      "description": "The username to secure the editor.",
-      "value": "admin"
-    },
-    "NODE_RED_PASSWORD": {
-      "description": "The password to secure the editor.",
-      "value": "password"
-    }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql:hobby-dev",
-      "options": {
-        "version": "12"
-      }
-    }
-  ]
+  "success_url": "/"
 }
