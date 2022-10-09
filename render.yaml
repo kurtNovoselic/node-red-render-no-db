@@ -8,7 +8,7 @@ services:
     repo: https://github.com/lebalz/node-red-render.git
     buildCommand: npm install;
     startCommand: node --max-old-space-size=384 node_modules/node-red/red.js --settings ./settings.js;
-    healthCheckPath: /red
+    healthCheckPath: /
     envVars:
       - key: DATABASE_URL
         fromDatabase:
