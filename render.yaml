@@ -14,8 +14,10 @@ services:
           name: elephant
           property: connectionString
       - key: NODE_RED_USERNAME
-        value: admin
+        description: the username to secure the editor with, default[admin]
+        sync: false
       - key: NODE_RED_PASSWORD
+        description: the password to secure the editor with, default[password]
         sync: false
 databases:
   - name: elephant
