@@ -15,7 +15,6 @@ services:
       - key: NODE_RED_USERNAME
         value: admin
       - key: NODE_RED_PASSWORD
-        value: password
         sync: false
 databases:
   - name: elephant
