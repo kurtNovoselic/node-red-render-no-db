@@ -16,6 +16,7 @@ services:
         value: admin
       - key: NODE_RED_PASSWORD
         value: password
+        sync: false
 databases:
   - name: elephant
     plan: free # optional (defaults to starter)

@@ -19,6 +19,8 @@ var when = require("when");
 var pgutil = require('./pgutil');
 
 process.env.NODE_RED_HOME = __dirname;
+pgutil.initPG();
+pgutil.createTable();
 
 var settings = module.exports = {
     uiPort: process.env.PORT || 1880,
@@ -78,5 +80,3 @@ if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
 }
 
 settings.pgAppname = 'nodered';
-pgutil.initPG();
-pgutil.createTable();
