@@ -1,4 +1,4 @@
-# node-red-render
+# node-red-render-no-db
 
 A wrapper for deploying [Node-RED](http://nodered.org) to [Render](https://render.com/).
 
@@ -6,6 +6,7 @@ A wrapper for deploying [Node-RED](http://nodered.org) to [Render](https://rende
 
 *Based on @joeartsea's [node-red-heroku](https://github.com/joeartsea/node-red-heroku)*
 
+In this version, no database server is spawned and configured. You need to provide a `DATABASE_URL`. 
 
 ## Deploying Node-RED to Render
 
@@ -16,5 +17,6 @@ A wrapper for deploying [Node-RED](http://nodered.org) to [Render](https://rende
 
 You will be prompted before deploying to set the following environment variables to prevent public access to your flow editor.
 
-* NODE_RED_USERNAME [default: `admin`] - the username to secure the editor with
-* NODE_RED_PASSWORD - the password to secure the editor with
+* `NODE_RED_USERNAME` [default: `admin`] - the username to secure the editor with
+* `NODE_RED_PASSWORD` - the password to secure the editor with
+* `DATABASE_URL` - db connection string of the form `postgresql://[user[:password]@][netloc][:port][/dbname]`
