@@ -1,15 +1,14 @@
 {
-    "name"         : "node-red-render",
-    "version"      : "0.0.1",
-    "dependencies": {
-        "when": "~3.x",
-        "pg": "^8.3.0",
-        "nano": "~10.x",
-        "feedparser":"~0.19.2",
-        "redis":"~0.10.1",
-        "node-red": "~3.x"
-    }
-    "scripts": {
-  "start": "node server.js"
-    }
+  "name": "node-red-on-render",
+  "version": "1.0.0",
+  "description": "Node-RED en Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-red": "^3.1.0"
+  }
 }
+
